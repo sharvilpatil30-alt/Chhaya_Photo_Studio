@@ -100,10 +100,6 @@
 <a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="pricing.html">Pricing</a>
 <a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="contact.html">Contact</a>
 </div>
-<div class="flex shrink-0 items-center gap-3">
-<button id="theme-toggle" class="rounded-md bg-surface px-3 py-2 text-sm font-medium text-on-surface border border-outline-variant hover:bg-surface-low transition-colors duration-300" type="button">
-<span class="material-symbols-outlined text-base">dark_mode</span>
-</button>
 <button class="rounded-md bg-gradient-to-br from-primary to-[#B5952F] px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/25 transition hover:brightness-110 active:scale-[0.98]" data-book-session-trigger="true" type="button">
     Book a Session
 </button>
@@ -114,343 +110,247 @@
 <!-- Pricing & Services Section -->
 <section class=" mt-32">
     <div class="text-center mb-16">
-        <span class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-4 block">Investment</span>
-        <h2 class="font-headline text-4xl md:text-5xl text-on-surface">Pricing & Services</h2>
+        <span class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-4 block">Our Services</span>
+        <h2 class="font-headline text-4xl md:text-5xl text-on-surface">Photography Services</h2>
         <div class="w-12 h-px bg-primary mx-auto mt-6"></div>
     </div>
 
-    <!-- Section 1: Indoor Studio Photography -->
-    <div class="mb-24">
-        <h3 class="font-headline text-3xl text-primary-container border-b border-outline-variant/20 pb-4 mb-10">Indoor Studio Photography</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- A) Mobile / Standard Prints -->
-            <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow h-full flex flex-col ">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="material-symbols-outlined text-primary">photo_prints</span>
-                    <h4 class="font-headline text-xl text-on-surface">Mobile & Standard Prints <span class="text-sm font-body text-on-surface-variant font-normal">(4x6 Base)</span></h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Indoor Studio Photography Card -->
+        <div class="bg-surface-container-low rounded-xl p-10 gallery-shadow border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:translate-y-[-4px]">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary/10 rounded-lg p-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
                 </div>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left text-sm text-on-surface-variant">
-                        <thead class="text-xs uppercase bg-surface-container-lowest text-on-surface font-label">
-                            <tr>
-                                <th class="px-4 py-3 rounded-l-md">Quantity</th>
-                                <th class="px-4 py-3 rounded-r-md text-right">Price per photo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-outline-variant/10">
-                                <td class="px-4 py-3">1–10 prints</td>
-                                <td class="px-4 py-3 text-right font-medium text-on-surface">₹30</td>
-                            </tr>
-                            <tr class="border-b border-outline-variant/10">
-                                <td class="px-4 py-3">11–50 prints</td>
-                                <td class="px-4 py-3 text-right font-medium text-on-surface">₹20</td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-3">51–300 prints</td>
-                                <td class="px-4 py-3 text-right font-medium text-on-surface">₹15</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mt-4 pt-4 border-t border-outline-variant/20">
-                    <p class="text-sm text-error/90 font-medium"><span class="font-bold">Urgent Pricing:</span> 1–10 prints → ₹50 each</p>
-                </div>
+                <h3 class="font-headline text-3xl text-on-surface">Indoor Studio Photography</h3>
             </div>
-
-            <!-- B) Identity / Small Size Photos -->
-            <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow h-full flex flex-col ">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="material-symbols-outlined text-primary">badge</span>
-                    <h4 class="font-headline text-xl text-on-surface">Identity & Small Size Photos</h4>
-                </div>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Personal ID</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">ID with Name & Date</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Passport</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Visa (35x45 mm)</span>
-                </div>
-                <div class="mb-6 flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
-                    <span class="text-on-surface">Passport / Visa (35x45 mm)</span>
-                    <span class="font-medium text-lg text-primary">₹100 <span class="text-xs text-on-surface-variant">/ 6 photos</span></span>
-                </div>
-                <div class="mb-4">
-                    <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-3">Special Packs</span>
-                    <div class="grid grid-cols-3 gap-3">
-                        <div class="bg-surface-container-lowest p-3 rounded text-center border border-outline-variant/10">
-                            <span class="block text-sm text-on-surface-variant mb-1">8 photos</span>
-                            <span class="font-medium text-on-surface">₹80</span>
-                        </div>
-                        <div class="bg-surface-container-lowest p-3 rounded text-center border border-outline-variant/10">
-                            <span class="block text-sm text-on-surface-variant mb-1">16 photos</span>
-                            <span class="font-medium text-on-surface">₹130</span>
-                        </div>
-                        <div class="bg-surface-container-lowest p-3 rounded text-center border border-outline-variant/10">
-                            <span class="block text-sm text-on-surface-variant mb-1">32 photos</span>
-                            <span class="font-medium text-on-surface">₹180</span>
+            
+            <p class="text-on-surface-variant mb-8 leading-relaxed">Professional studio sessions for portraits, documents, and creative expressions. Perfect for ID photos, passport photos, and artistic portraits with controlled lighting and backgrounds.</p>
+            
+            <!-- Services Include Snippets -->
+            <div class="mb-8">
+                <span class="text-xs uppercase tracking-widest text-primary font-label block mb-4 pb-3 border-b border-primary/20">Services Include</span>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Mobile & Standard Prints</p>
+                            <p class="text-on-surface-variant text-xs">Physical copies in various sizes</p>
                         </div>
                     </div>
-                </div>
-                <div class="mt-auto pt-4 flex gap-4 text-xs text-on-surface-variant">
-                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">info</span> Urgent: +₹10 extra</span>
-                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">info</span> Sizes vary by requirement</span>
-                </div>
-            </div>
-
-            <!-- C) Soft Copy & Hard Copy -->
-            <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow h-full flex flex-col ">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="material-symbols-outlined text-primary">description</span>
-                    <h4 class="font-headline text-xl text-on-surface">Soft Copy & Hard Copy</h4>
-                </div>
-                <div class="mb-6 flex justify-between items-center bg-surface-container-lowest p-4 rounded-md border border-outline-variant/10">
-                    <span class="font-medium text-on-surface">Soft Copy <span class="text-sm font-normal text-on-surface-variant">(any size)</span></span>
-                    <span class="text-lg text-primary font-medium">₹150</span>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-3">Hard Copy Only</span>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded">
-                                <span class="text-on-surface-variant">4x6</span>
-                                <span class="font-medium text-on-surface">₹100</span>
-                            </li>
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded">
-                                <span class="text-on-surface-variant">5x7</span>
-                                <span class="font-medium text-on-surface">₹180</span>
-                            </li>
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded">
-                                <span class="text-on-surface-variant">6x8</span>
-                                <span class="font-medium text-on-surface">₹250</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-3">Both (Soft + Hard)</span>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded border border-primary/20">
-                                <span class="text-on-surface-variant">4x6</span>
-                                <span class="font-medium text-on-surface">₹150</span>
-                            </li>
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded border border-primary/20">
-                                <span class="text-on-surface-variant">5x7</span>
-                                <span class="font-medium text-on-surface">₹200</span>
-                            </li>
-                            <li class="flex justify-between items-center bg-surface-container-lowest px-3 py-2 rounded border border-primary/20">
-                                <span class="text-on-surface-variant">6x8</span>
-                                <span class="font-medium text-on-surface">₹300</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="mt-6 pt-4 border-t border-outline-variant/20 flex gap-4 text-xs text-on-surface-variant flex-wrap">
-                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">schedule</span> Hard copies delivered after 4 days</span>
-                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">aspect_ratio</span> Custom sizes based on standard fit</span>
-                </div>
-            </div>
-
-            <!-- D) Frames & Enlargements -->
-            <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow h-full flex flex-col  md:row-span-2">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="material-symbols-outlined text-primary">wallpaper</span>
-                    <h4 class="font-headline text-xl text-on-surface">Frames & Enlargements</h4>
-                </div>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Wooden</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Lamination</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Collage</span>
-                    <span class="bg-surface-container-lowest px-3 py-1 rounded text-xs text-on-surface-variant border border-outline-variant/20">Memorial</span>
-                </div>
-                
-                <div class="space-y-6">
-                    <!-- Basic Frames -->
-                    <div>
-                        <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-3 border-b border-outline-variant/10 pb-2">Basic Frames</span>
-                        <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                            <div class="flex justify-between"><span class="text-on-surface-variant">8x12</span><span class="font-medium">₹700</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">10x15</span><span class="font-medium">₹1000</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">12x18</span><span class="font-medium">₹1600</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">16x20</span><span class="font-medium">₹2800</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">20x24</span><span class="font-medium">₹3600</span></div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Soft Copy & Hard Copy</p>
+                            <p class="text-on-surface-variant text-xs">Digital files and printed copies</p>
                         </div>
                     </div>
-                    
-                    <!-- Premium Frames -->
-                    <div>
-                        <span class="text-xs uppercase tracking-widest text-primary font-label block mb-3 border-b border-primary/20 pb-2">Premium Frames <span class="text-on-surface-variant font-normal lowercase">(Acrylic / Canvas / LED)</span></span>
-                        <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                            <div class="flex justify-between"><span class="text-on-surface-variant">8x12</span><span class="font-medium text-primary">₹1200</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">10x15</span><span class="font-medium text-primary">₹1800</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">12x18</span><span class="font-medium text-primary">₹2500</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">16x20</span><span class="font-medium text-primary">₹3200</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">20x24</span><span class="font-medium text-primary">₹4000</span></div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Frames & Enlargements</p>
+                            <p class="text-on-surface-variant text-xs">Professional framing options</p>
                         </div>
                     </div>
-                    
-                    <!-- Large Sizes -->
-                    <div>
-                        <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-3 border-b border-outline-variant/10 pb-2">Large Sizes</span>
-                        <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                            <div class="flex justify-between"><span class="text-on-surface-variant">20x30</span><span class="font-medium">₹4500</span></div>
-                            <div class="flex justify-between"><span class="text-on-surface-variant">24x36</span><span class="font-medium">₹6000</span></div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Professional Retouching</p>
+                            <p class="text-on-surface-variant text-xs">Editing included in all packages</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- E & F) Portrait & Highlights -->
-            <div class="space-y-8">
-                <!-- E) Portrait / Banner -->
-                <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow  flex items-center justify-between">
+            <!-- Quick Stats -->
+            <div class="bg-surface-container-lowest/50 rounded-lg p-4 border border-outline-variant/10">
+                <div class="grid grid-cols-3 gap-4 text-center">
                     <div>
-                        <div class="flex items-center gap-3 mb-2">
-                            <span class="material-symbols-outlined text-primary">portrait</span>
-                            <h4 class="font-headline text-xl text-on-surface">Portrait / Banner Photos</h4>
-                        </div>
-                        <p class="text-sm text-on-surface-variant">Instant soft copy portraits</p>
+                        <p class="text-primary font-headline text-2xl">1-4h</p>
+                        <p class="text-xs text-on-surface-variant">Session Duration</p>
                     </div>
-                    <span class="text-2xl text-primary font-medium">₹100 <span class="text-sm text-on-surface-variant font-normal">/ photo</span></span>
+                    <div>
+                        <p class="text-primary font-headline text-2xl">5-10</p>
+                        <p class="text-xs text-on-surface-variant">Final Photos</p>
+                    </div>
+                    <div>
+                        <p class="text-primary font-headline text-2xl">Pro</p>
+                        <p class="text-xs text-on-surface-variant">Quality</p>
+                    </div>
                 </div>
-                
-                <!-- F) Highlights -->
-                <div class="bg-surface-container-low rounded-lg p-8 gallery-shadow h-full">
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="material-symbols-outlined text-primary">stars</span>
-                        <h4 class="font-headline text-xl text-on-surface">Highlights & Policies</h4>
+            </div>
+        </div>
+
+        <!-- Outdoor / Event Photography Card -->
+        <div class="bg-surface-container-low rounded-xl p-10 gallery-shadow border border-outline-variant/10 hover:border-primary/30 transition-all duration-300 hover:translate-y-[-4px]">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-primary/10 rounded-lg p-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">event</span>
+                </div>
+                <h3 class="font-headline text-3xl text-on-surface">Outdoor & Event Photography</h3>
+            </div>
+            
+            <p class="text-on-surface-variant mb-8 leading-relaxed">Capture life's special moments with our comprehensive event photography services for weddings, engagements, birthdays, and celebrations with professional storytelling.</p>
+            
+            <!-- Event Types Snippets -->
+            <div class="mb-8">
+                <span class="text-xs uppercase tracking-widest text-primary font-label block mb-4 pb-3 border-b border-primary/20">Event Types Covered</span>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">💍 Wedding & Engagement</p>
                     </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3 text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
-                            <span>Editing included in the price</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary text-xl">bolt</span>
-                            <span>Instant delivery available only for selected services</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-on-surface-variant">
-                            <span class="material-symbols-outlined text-error/80 text-xl">block</span>
-                            <span>No retake option available</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-on-surface-variant">
-                            <span class="material-symbols-outlined text-primary text-xl">devices</span>
-                            <span>Soft copy equals digital copy</span>
-                        </li>
-                    </ul>
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">🎂 Birthday & Functions</p>
+                    </div>
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">💕 Pre-Wedding Shoots</p>
+                    </div>
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">📸 Commercial Events</p>
+                    </div>
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">🤰 Maternity Sessions</p>
+                    </div>
+                    <div class="bg-surface-container-lowest/50 rounded-lg p-3 border border-outline-variant/10">
+                        <p class="text-on-surface font-medium text-sm">🎥 Video Coverage</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Types -->
+            <div class="bg-surface-container-lowest/50 rounded-lg p-4 border border-outline-variant/10">
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Standard Package</p>
+                            <p class="text-on-surface-variant text-xs">Album + Digital Files</p>
+                        </div>
+                        <span class="text-primary font-headline">30-50</span>
+                    </div>
+                    <div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Premium Package</p>
+                            <p class="text-on-surface-variant text-xs">Album + Video + Add-ons</p>
+                        </div>
+                        <span class="text-primary font-headline">50+</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-on-surface font-medium text-sm">Custom Package</p>
+                            <p class="text-on-surface-variant text-xs">Fully Customizable</p>
+                        </div>
+                        <span class="text-primary font-headline">📋</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Section 2: Outdoor / Event Photography -->
-    <div>
-        <h3 class="font-headline text-3xl text-primary-container border-b border-outline-variant/20 pb-4 mb-10">Outdoor / Event Photography</h3>
-        
-        <!-- A) Event Types -->
-        <div class="mb-10">
-            <span class="text-xs uppercase tracking-widest text-on-surface-variant font-label block mb-4">Event Types Covered</span>
-            <div class="flex flex-wrap gap-3">
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Wedding</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Engagement</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Pre-Wedding</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Sakharpuda</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Maternity</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Birthday, Functions</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Commercial Shoots</span>
-                <span class="bg-surface-container-low px-4 py-2 rounded-full text-sm text-on-surface border border-primary/20 shadow-sm">Custom Events</span>
-            </div>
+    <div class="mt-20 pt-16 border-t border-outline-variant/20">
+        <div class="text-center mb-16">
+            <span class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-4 block">Why Choose Us</span>
+            <h3 class="font-headline text-4xl md:text-5xl text-on-surface mb-6">Why Choose Chhaya?</h3>
+            <p class="text-on-surface-variant max-w-3xl mx-auto text-lg">We believe in capturing moments with precision and artistry. Every session is crafted with care to preserve your memories beautifully.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <!-- B) Album Packages -->
-            <div class="md:col-span-8 bg-surface-container-low rounded-lg p-8 gallery-shadow">
-                <div class="flex items-center gap-3 mb-8">
-                    <span class="material-symbols-outlined text-primary text-2xl">auto_stories</span>
-                    <h4 class="font-headline text-2xl text-on-surface">Album Packages <span class="text-sm font-body text-on-surface-variant font-normal">(12x36 Size)</span></h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Professional Quality Card -->
+            <div class="bg-surface-container-low rounded-xl p-8 gallery-shadow hover:translate-y-[-4px] transition-transform duration-300 border border-outline-variant/10">
+                <div class="bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-4xl">auto_awesome</span>
                 </div>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-surface-container-lowest p-6 rounded-md border border-outline-variant/10 text-center hover:border-primary/50 transition-colors">
-                        <span class="block text-3xl font-light text-on-surface mb-2">30</span>
-                        <span class="block text-sm text-on-surface-variant uppercase tracking-widest mb-4">Pages</span>
-                        <span class="block text-xl font-medium text-primary">₹25,000</span>
+                <h4 class="font-headline text-2xl text-on-surface mb-3 text-center">Professional Quality</h4>
+                <p class="text-on-surface-variant text-center mb-6">Expert photographers with years of experience delivering exceptional results.</p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">State-of-the-art equipment and technology</span>
                     </div>
-                    <div class="bg-surface-container-lowest p-6 rounded-md border border-primary/30 text-center shadow-lg shadow-primary/5 relative hover:border-primary transition-colors">
-                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Popular</div>
-                        <span class="block text-3xl font-light text-on-surface mb-2">40</span>
-                        <span class="block text-sm text-on-surface-variant uppercase tracking-widest mb-4">Pages</span>
-                        <span class="block text-xl font-medium text-primary">₹32,000</span>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">10+ years of industry experience</span>
                     </div>
-                    <div class="bg-surface-container-lowest p-6 rounded-md border border-outline-variant/10 text-center hover:border-primary/50 transition-colors">
-                        <span class="block text-3xl font-light text-on-surface mb-2">50</span>
-                        <span class="block text-sm text-on-surface-variant uppercase tracking-widest mb-4">Pages</span>
-                        <span class="block text-xl font-medium text-primary">₹40,000</span>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Award-winning photography style</span>
                     </div>
                 </div>
-                
-                <div class="flex justify-between items-center bg-surface-container-lowest px-6 py-4 rounded-md border border-outline-variant/10">
-                    <div class="flex items-center gap-2">
-                        <span class="material-symbols-outlined text-primary text-sm">add_circle</span>
-                        <span class="text-sm text-on-surface">Extra Pages</span>
-                    </div>
-                    <span class="font-medium text-on-surface">₹700 <span class="text-xs text-on-surface-variant font-normal">/ additional page</span></span>
-                </div>
-                <p class="text-xs text-primary mt-4 text-center">Soft copy of album is included with all packages</p>
             </div>
 
-            <!-- C & D) Add-ons & Video -->
-            <div class="md:col-span-4 space-y-8">
-                <!-- D) Video Services -->
-                <div class="bg-surface-container-low rounded-lg p-6 gallery-shadow">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">videocam</span>
-                        <h4 class="font-headline text-xl text-on-surface">Video Services</h4>
+            <!-- Expert Editing Card -->
+            <div class="bg-surface-container-low rounded-xl p-8 gallery-shadow hover:translate-y-[-4px] transition-transform duration-300 border border-outline-variant/10">
+                <div class="bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-4xl">edit</span>
+                </div>
+                <h4 class="font-headline text-2xl text-on-surface mb-3 text-center">Expert Editing</h4>
+                <p class="text-on-surface-variant text-center mb-6">Professional post-processing and retouching for stunning final results.</p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Advanced color grading & enhancement</span>
                     </div>
-                    <div class="space-y-3">
-                        <div class="bg-surface-container-lowest p-4 rounded-md border border-outline-variant/10 flex justify-between items-center hover:border-primary/30 transition-colors">
-                            <span class="text-on-surface text-sm font-medium">Traditional Video</span>
-                            <span class="font-medium text-primary">₹20,000</span>
-                        </div>
-                        <div class="bg-gradient-to-r from-surface-container-lowest to-primary/5 p-4 rounded-md border border-primary/20 flex justify-between items-center shadow-md">
-                            <span class="text-on-surface text-sm font-medium">Cinematic Video</span>
-                            <span class="font-medium text-primary">₹30,000</span>
-                        </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Professional retouching & touch-ups</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Custom editing per your preference</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- C) Add-ons -->
-                <div class="bg-surface-container-low rounded-lg p-6 gallery-shadow">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="material-symbols-outlined text-primary">extension</span>
-                        <h4 class="font-headline text-xl text-on-surface">Add-ons</h4>
+            <!-- Artistic Vision Card -->
+            <div class="bg-surface-container-low rounded-xl p-8 gallery-shadow hover:translate-y-[-4px] transition-transform duration-300 border border-outline-variant/10">
+                <div class="bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-4xl">favorite</span>
+                </div>
+                <h4 class="font-headline text-2xl text-on-surface mb-3 text-center">Artistic Vision</h4>
+                <p class="text-on-surface-variant text-center mb-6">Crafted with passion and attention to detail in every frame.</p>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Unique creative perspective & style</span>
                     </div>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex justify-between items-center py-2 border-b border-outline-variant/10">
-                            <span class="text-on-surface-variant">Drone Shoot</span>
-                            <span class="font-medium text-on-surface">+₹10,000</span>
-                        </li>
-                        <li class="flex justify-between items-center py-2 border-b border-outline-variant/10">
-                            <span class="text-on-surface-variant">Reel Shoot</span>
-                            <span class="font-medium text-on-surface">+₹5,000</span>
-                        </li>
-                        <li class="flex justify-between items-center py-2 border-b border-outline-variant/10">
-                            <span class="text-on-surface-variant">Candid Photography</span>
-                            <span class="font-medium text-on-surface">+₹7,000</span>
-                        </li>
-                        <li class="flex justify-between items-center py-2">
-                            <span class="text-on-surface-variant">Extra Shoot Time</span>
-                            <span class="font-medium text-on-surface">₹5k–₹10k</span>
-                        </li>
-                    </ul>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Attention to emotion & storytelling</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-sm text-on-surface-variant">Timeless, elegant photography approach</span>
+                    </div>
                 </div>
             </div>
             
- -->
+            <!-- E) Custom Quote -->
+            <div class="md:col-span-12 mt-4 bg-gradient-to-br from-surface-container-low to-surface-container-lowest rounded-xl p-10 border border-primary/20 shadow-lg text-center relative overflow-hidden group">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none"></div>
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                
+                <h4 class="font-headline text-3xl text-on-surface mb-4 relative z-10">Craft Your Perfect Package</h4>
+                <p class="text-on-surface-variant mb-8 max-w-2xl mx-auto relative z-10">Final pricing depends on selected services and customization. Our flow allows you to select your event type, preferred album, and specialized add-ons to build a tailored experience.</p>
+                
+                <!-- Flow UI Visual -->
+                <div class="flex flex-wrap justify-center items-center gap-4 mb-10 text-sm font-label uppercase tracking-widest text-primary/80 relative z-10">
+                    <span class="bg-surface-container px-4 py-2 rounded-full border border-primary/10">1. Select Event</span>
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                    <span class="bg-surface-container px-4 py-2 rounded-full border border-primary/10">2. Select Album</span>
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                    <span class="bg-surface-container px-4 py-2 rounded-full border border-primary/10">3. Add Services</span>
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                    <span class="bg-surface-container px-4 py-2 rounded-full border border-primary/30 text-primary">4. Get Estimate</span>
+                </div>
+                
+                <button class="relative z-10 rounded-md bg-gradient-to-br from-primary to-[#B5952F] px-10 py-4 text-base font-bold tracking-widest uppercase text-white shadow-xl shadow-primary/25 transition-all hover:scale-105 hover:brightness-110 active:scale-95" data-book-session-trigger="true" type="button">
+                    👉 Get Custom Quote
+                </button>
+            </div>
         </div>
     </div>
 </section>
+
+<div class="mt-24"></div>
+
 <div class="mt-24"></div>
 
 <!-- Hero Section -->
