@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             frame.style.borderWidth = `${Math.random() > 0.7 ? 2 : 1}px`;
             
             // Enhanced Visibility: Opacity 0.25 to 0.55 based on depth (closer = more opaque)
-            frame.style.opacity = (depth * 0.15 + 0.25).toFixed(2);
+            frame.style.opacity = (depth * 0.2 + 0.35).toFixed(2);
             
             // Depth effect (blur for distant objects)
             if (depth < 0.6) {

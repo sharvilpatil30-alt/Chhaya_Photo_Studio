@@ -166,28 +166,33 @@
         }
 
 </style>
+<script src="theme-toggle.js"></script>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
-<nav class="sticky top-0 w-full z-50 dark: backdrop-blur-xl dark:shadow-none bg-black/90 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/50 ">
+<nav class="sticky top-0 w-full z-50 shadow-sm">
 <div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
-<div class="flex flex-col items-start translate-y-1">
-                <span class="text-3xl font-serif font-bold text-[#D4AF37] tracking-tight leading-none lowercase">chhaya photo studio</span>
-                <span class="text-[0.65rem] font-sans tracking-[0.3em] text-gray-400 uppercase mt-1 pl-1">Capture Your Moments</span>
-            </div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#D4AF37] transition-colors duration-300" href="dashboard.html">Home</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#D4AF37] transition-colors duration-300" href="services.html">Services</a>
-<a class="text-gray-600 dark:text-gray-400 border-b border-gray-500/30 pb-1 hover:text-[#D4AF37] transition-colors duration-300" href="pricing.html">Pricing</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#D4AF37] transition-colors duration-300" href="contact.html">Contact</a>
+<div class="flex flex-col items-start">
+<span class="text-3xl font-headline font-bold text-[#D4AF37]">Chhaya photo studio</span>
+<span class="text-[0.65rem] font-body tracking-[0.3em] text-slate-500 uppercase mt-1 pl-1 dark:text-slate-400">Capture Your Moments</span>
 </div>
+<div class="hidden md:flex items-center space-x-10" data-site-nav-links>
+<a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="dashboard.html">Home</a>
+<a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="services.html">Services</a>
+<a class="text-[#D4AF37] border-b border-[#D4AF37]/30 pb-1 font-medium" href="pricing.html">Pricing</a>
+<a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="contact.html">Contact</a>
+</div>
+<div class="flex shrink-0 items-center gap-3">
+<button id="theme-toggle" class="rounded-md bg-surface px-3 py-2 text-sm font-medium text-on-surface border border-outline-variant hover:bg-surface-low transition-colors duration-300" type="button">
+<span class="material-symbols-outlined text-base">dark_mode</span>
+</button>
 <button class="rounded-md bg-gradient-to-br from-primary to-[#B5952F] px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/25 transition hover:brightness-110 active:scale-[0.98]" data-book-session-trigger="true" type="button">
     Book a Session
 </button>
 </div>
+</div>
 </nav>
-</header>
-<main class="reveal-on-scroll min-h-screen">
+<main class=" mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8 lg:pb-32">
 <!-- Hero Section -->
 <section class="reveal-on-scroll relative pt-24 pb-16 px-8 max-w-screen-xl mx-auto text-center">
 <span class="font-label text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Investment</span>
@@ -366,7 +371,7 @@
 </section>
 </main>
 <!-- Booking Modal -->
-<div class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-black/50" data-booking-modal="">
+<div class="fixed inset-0 z-[100] hidden items-center justify-center p-6 bg-slate-900/10" data-booking-modal="">
 <div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl p-8 md:p-10 relative">
 <button aria-label="Close booking form" class="absolute right-4 top-4 text-on-surface-variant hover:text-on-surface" data-booking-close="" type="button">
                 ✕
@@ -400,7 +405,7 @@
 </div>
 <!-- Footer -->
 
-<footer class="relative z-50 border-t border-white/10 bg-black py-12 md:py-16">
+<footer class="relative z-50 border-t border-slate-200 bg-surface py-12 md:py-16">
     <div class="mx-auto flex max-w-7xl flex-col gap-10 px-4 sm:px-6 lg:px-8 md:flex-row md:items-start md:justify-between md:gap-12">
         <div class="flex max-w-sm flex-col items-start">
             <span class="font-headline text-2xl font-bold leading-none tracking-tight text-primary lowercase">chhaya photo studio</span>
@@ -423,7 +428,7 @@
                 <p class="text-sm leading-relaxed">Chhaya Photo Studio, Shop no.1,<br/>Sonraj Complex, near Nalanda Hotel,<br/>S.T. stand road, Islampur,<br/>Maharashtra, India, 415409</p>
             </div>
 
-<div class="mt-4 w-full overflow-hidden rounded-lg border border-white/10 shadow-lg" style="height: 150px;">
+<div class="mt-4 w-full overflow-hidden rounded-lg border border-slate-200 shadow-lg" style="height: 150px;">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30528.857321591873!2d74.24647!3d17.04231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc17480a424e4d3%3A0xc63b1fb25b52db77!2sIslampur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1713500000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 

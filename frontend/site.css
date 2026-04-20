@@ -1,12 +1,122 @@
 /* Chhaya Photo Studio — shared baseline (used with Tailwind CDN) */
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #111111;
+  background: #FFFFFF;
+  --bg: #FFFFFF;
+  --surface: #F5F5F5;
+  --surface-low: #F7F7F7;
+  --surface-lowest: #FFFFFF;
+  --text: #111111;
+  --text-variant: #4B4B4B;
+  --border: #E0E0E0;
+  --accent: #D4AF37;
+  --bg-rgb: 255, 255, 255;
+  --surface-rgb: 245, 245, 245;
+  --text-rgb: 17, 17, 17;
+  --border-rgb: 224, 224, 224;
+  --accent-rgb: 212, 175, 55;
+}
+
+.dark {
+  --bg: #111111;
+  --surface: #1A1A1A;
+  --surface-low: #2A2A2A;
+  --surface-lowest: #111111;
+  --text: #FFFFFF;
+  --text-variant: #CCCCCC;
+  --border: #333333;
+  --accent: #D4AF37;
+  --bg-rgb: 17, 17, 17;
+  --surface-rgb: 26, 26, 26;
+  --text-rgb: 255, 255, 255;
+  --border-rgb: 51, 51, 51;
+  --accent-rgb: 212, 175, 55;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+.bg-background {
+  background-color: var(--bg) !important;
+}
+
+.bg-surface {
+  background-color: var(--surface) !important;
+}
+
+.bg-surface-container {
+  background-color: var(--surface) !important;
+}
+
+.bg-surface-container-low {
+  background-color: var(--surface-low) !important;
+}
+
+.bg-surface-container-lowest {
+  background-color: var(--surface-lowest) !important;
+}
+
+.text-on-surface {
+  color: var(--text) !important;
+}
+
+.text-on-surface-variant {
+  color: var(--text-variant) !important;
+}
+
+.border-outline-variant,
+.border-white\/5,
+.border-white\/10 {
+  border-color: var(--border) !important;
+}
+
+.bg-white\/95,
+.bg-black\/90 {
+  background-color: rgba(255,255,255,0.95) !important;
+}
+
+.bg-slate-900\/10,
+.bg-black\/50 {
+  background-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+.text-gray-400,
+.text-stone-500,
+.text-stone-100,
+.text-on-tertiary,
+.text-on-secondary {
+  color: var(--text-variant) !important;
+}
+
+.font-serif {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Header Theme Styles */
+nav {
+  background: rgba(var(--bg-rgb), 0.95) !important;
+  border-color: var(--border) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 /* --- Animated Parallax Background Frames --- */
@@ -25,8 +135,8 @@ body {
     position: absolute;
     /* Primary color from the theme (#bca354) with subtle opacity */
     border-style: solid;
-    border-color: rgba(212, 175, 55, 0.7);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.1);
+    border-color: rgba(var(--accent-rgb), 0.7);
+    box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.15), inset 0 0 15px rgba(var(--accent-rgb), 0.1);
     box-sizing: border-box;
     /* Hardware acceleration for smooth animation */
     will-change: transform, opacity;
