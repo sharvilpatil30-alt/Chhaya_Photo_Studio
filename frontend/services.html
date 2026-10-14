@@ -43,11 +43,7 @@
                     "xl": "0.5rem",
                     "full": "0.75rem"
             },
-            "fontFamily": {
-                    "headline": ["Inter"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
-            }
+            "fontFamily": { "headline": ["Inter", "sans-serif"], "body": ["Inter", "sans-serif"], "label": ["Inter", "sans-serif"], "sans": ["Inter", "sans-serif"] }
           },
         },
       }
@@ -91,13 +87,13 @@
 <nav class="sticky top-0 w-full z-50 shadow-sm">
 <div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
 <div class="flex flex-col items-start">
-<span class="text-3xl font-bold text-[#D4AF37]" style="font-family: 'Playfair Display', serif; letter-spacing: 1px;">
+<span class="text-3xl font-bold text-[#D4AF37]" >
   Chhaya photo studio
 </span>
 <span class="text-[0.65rem] font-body tracking-[0.3em] text-slate-500 uppercase mt-1 pl-1 dark:text-slate-400">Capture Your Moments</span>
 </div>
 <div class="hidden md:flex items-center space-x-10" data-site-nav-links>
-<a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="dashboard.html">Home</a>
+<a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="index.html">Home</a>
 <a class="text-[#D4AF37] border-b border-[#D4AF37]/30 pb-1 font-medium" href="services.html">Services</a>
 <a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="pricing.html">Pricing</a>
 <a class="text-stone-600 font-medium hover:text-[#D4AF37] transition-colors duration-300 dark:text-slate-300 dark:hover:text-[#D4AF37]" href="contact.html">Contact</a>
@@ -520,7 +516,7 @@
 
 <script>
     (function () {
-        const currentPage = (window.location.pathname.split("/").pop() || "dashboard.html").toLowerCase();
+        const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
         const navLinks = document.querySelectorAll("[data-site-nav-links] a[href$=\".html\"]");
         if (!navLinks.length) return;
 
@@ -545,7 +541,7 @@
     })();
 
     (function () {
-        const API_BASE = window.CHHAYA_API_BASE || "http://localhost:3000";
+        const API_BASE = window.CHHAYA_API_BASE || (window.location.protocol.startsWith("http") && (window.location.hostname !== "localhost" || window.location.port === "3001") ? "" : "http://localhost:3001");
         const modal = document.querySelector("[data-booking-modal]");
         const openButtons = document.querySelectorAll("[data-book-session-trigger]");
         const closeButton = document.querySelector("[data-booking-close]");
@@ -658,4 +654,5 @@
 </script>
 
 <script src="assets/js/parallax.js"></script>
+    <script src="chhaya-client.js"></script>
 </body></html>

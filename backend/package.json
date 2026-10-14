@@ -1,11 +1,15 @@
 {
   "name": "chhaya_photo_studio",
   "version": "1.0.0",
-  "description": "Next.js backend for Chhaya Photo Studio",
+  "description": "Express.js API and Web backend for Chhaya Photo Studio",
+  "main": "server.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test:api": "node test-api.js",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start",
     "lint": "next lint"
   },
   "repository": {
@@ -20,6 +24,9 @@
   },
   "homepage": "https://github.com/jishnu91224-arch/Chhaya_Photo_Studio#readme",
   "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
     "next": "^16.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"

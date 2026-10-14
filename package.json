@@ -1,0 +1,17 @@
+{
+  "name": "chhaya-photo-studio",
+  "version": "2.0.0",
+  "description": "Chhaya Photo Studio Full-Stack Web Application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test:api": "node backend/test-api.js",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
